@@ -1,187 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">
 
 <head>
     <meta charset="UTF-8">
-    <title>css</title>
+    <title>My Own Bage</title>
     <link rel="stylesheet" href="ahmed.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@0,400;1,300&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
-    <div class="arrow top">Elzero</div>
-    <div class="arrow right">Elzero</div>
-    <div class="arrow bottom">Elzero</div>
-    <div class="arrow left">Elzero</div>
 
 
+<body class="white-theme">
 
+<section class="hero">
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>Ah</span>Nawar</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfoilo</a>
+                <a href="#">contact</a>
+            </div>
+            <span><i class="fa-solid fa-sun btn-mode"></i></span>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="div-text">
+
+        <h4>Hello My Name is</h4>
+        <h1>Ahmed Nawar</h1>
+        <span>Front-End Developer</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Saepe sint tenetur optio delectus dolor, quos inventore laudantium ratione fugit 
+            suscipit debitis atque quod repellendus quia maxime! Corporis, beatae. Odit, cupiditate!</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="div-img">
+            <img src="WhatsApp_Image_2024-02-13_at_15.18.18_d6079692-removebg-preview.png" alt="">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/home.php" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=ar" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    let btnMode=document.querySelector(".btn-mode");
+    btnMode.onclick = function(){
+        document.body.classList.toggle("white-theme")
+        btnMode.classList.toggle("fa-sun")
+        btnMode.classList.toggle("fa-moon")
+    }
+</script>
+<script src="ahmed.js"></script>
 </body>
 
 </html>
-<!--project 1
-    <div class="grid">
-    <div class="one">
-        <h4>Osama Mohmamed</h4>
-        <h5>FULL-Stak-Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="two">
-        <h4>Ahmed Sayed</h4>
-        <h5>Ios Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-
-    </div>
-    <div class="three">
-        <h4>Shady Nabil</h4>
-        <h5>FULL-Stak-Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="four">
-        <h4>Mohmamed Ibrahim</h4>
-        <h5>Net Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="five">
-        <h4>Mahmoud Mohmamed</h4>
-        <h5>FULL-Stak-Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="six">
-        <h4>EZZ Eldin</h4>
-        <h5>Front-End-Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="seven">
-        <h4>Mohamed Sayed</h4>
-        <h5>Ios Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="eight">
-        <h4>Ibrahim Sayed</h4>
-        <h5>Ios Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="nine">
-        <h4>Gamal Sayed</h4>
-        <h5>Ios Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-    <div class="ten">
-        <h4>Eman Sayed</h4>
-        <h5>Ios Developer</h5>
-        <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta quasi cupiditate esse asperiores ea et commodi libero unde animi
-            quis eum nemo iusto at dignissimos incidunt, amet voluptatibus beatae neque!
-        </h4>
-        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus maiores excepturi aspernatur? Quam commodi corporis quod! Repellat
-            consequatur cum sequi porro provident praesentium placeat a, ex perferendis non adipisci quibusdam.
-        </h5>
-    </div>
-
-
-
-
-
-
-
-
-</div>
--->
-<!-- --------------------------------------------------------------- -->
-
-<!--project 2
-    <div class="parent">
-        <div class="E">
-            <div class="E1"></div>
-            <div class="E2"></div>
-            <div class="E3"></div>
-            <div class="E4"></div>
-            <div class="E5"></div>
-        </div>
-        <div class="L">
-            <div class="L1"></div>
-            <div class="L2"></div>
-        </div>
-    </div>
--->
